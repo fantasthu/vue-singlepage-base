@@ -35,6 +35,7 @@ export default {
     width: 200px;
     height: 1900px;
     background: red;
+    transform: translateX(100px);
   }
 }
 </style>
