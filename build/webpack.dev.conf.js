@@ -25,14 +25,7 @@ module.exports = merge(baseWebpackConfig, {
       'process.env': config.dev.env
     }),
     new webpack.LoaderOptionsPlugin({
-      vue: {
-        // 使用用户自定义插件
-        postcss: [
-          require('postcss-px2rem')({
-            remUtil: 75
-          })
-        ]
-      }
+      // 自定义插件
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
